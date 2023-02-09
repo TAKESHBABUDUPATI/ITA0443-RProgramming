@@ -1,0 +1,569 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}{\f1\fnil Times New Roman;}{\f2\fswiss\fprq2\fcharset0 Calibri;}}
+{\colortbl ;\red0\green0\blue0;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\widctlpar\sa200\sl276\slmult1\cf1\f0\fs32             Saveetha School of Engineering, SIMATS , chennai\par
+\fs24                                         \b ITA0443:-R PROGRAMMING\b0\fs22\par
+\b                                      \ul LABORATORY MANUAL\ulnone\par
+\b0 NAME:-D.Takesh Babu\par
+REGNO:-192125027\par
+GITHUB LINK:- {\cf0{\field{\*\fldinst{HYPERLINK https://github.com/TAKESHBABUDUPATI/ITA0443-RProgramming.git }}{\fldrslt{https://github.com/TAKESHBABUDUPATI/ITA0443-RProgramming.git\ul0\cf0}}}}\f0\fs22\par
+\b                                        \ul BASIC OPERATIONS IN R\ulnone\b0\par
+\b 1.Write The Commands To Perform Basic Arithmetic In R\par
+Code:-\par
+\b0 x<-c(2,4)\par
+y<-c(4,2)\par
+print(x+y)\par
+print(x-y)\par
+print(x*y)\par
+print(x/y)\par
+\b output:-\b0\par
+[1] 6 6\par
+[1] -2  2\par
+[1] 8 8\par
+\par
+\b 2.Display a String on R Console.\par
+Code:-\par
+\b0 print("takesh")\par
+\b output:-\par
+\b0 takesh\par
+\b 3.Declare Variables In R And Also Write The Commands For Retrieving The Value Of\par
+The Stored Variables In R Console.\par
+Code:-\par
+\b0 x = 3\par
+y = 5\par
+a = x > y\par
+a\par
+\b output:-\b0\par
+false\par
+\b 4.Write R script to calculate the area of Rectangle.\par
+Code:-\par
+\b0 l<-4\par
+b<-6\par
+a=l*b\par
+print(a)\par
+\b output:-\b0\par
+24\par
+\b 5.Write Commands In R Console To Determine The Type Of Variable\par
+Code:-\par
+\b0 x <- 123L\par
+print(x)\par
+print(class(x))\par
+\b output\b0 :-\par
+[1] 123\par
+[1] "integer"\par
+\par
+\b 6.Enumerate The Process To Check Whether A Given Input Is Numeric , Integer ,\par
+Double, Complex in R.\par
+Code:-\par
+\b0 is.numeric() function\par
+is.numeric(1)\par
+is.numeric(1.5)\par
+is.numeric(-1.5)\par
+\b output:-\b0\par
+[1] TRUE\par
+[1] TRUE\par
+[1] TRUE\par
+\b 7.Illustration of Vector Arithmetic.\par
+Code:-\par
+\b0 a <- c(10, 20, 30, 40, 50)\par
+b <- c(1, 3, 5, 7, 9)\par
+result <- a + b\par
+print(result)\par
+\b output:-\b0\par
+[1] 11 23 35 47 59\par
+\par
+\par
+\b 8. Write an R Program to Take Input From User.\par
+Code:-\par
+\b0 var1 = readline(prompt = "Enter your name : ");\par
+var2 = readline(prompt = "Enter any character : ");\par
+var2 = as.character(var2)\par
+print(var1)\par
+print(var2)\par
+\b output:-\b0\par
+\ldblquote Hai , Jack next year you will be 18 years old\rdblquote\par
+\par
+\par
+\b                                    \ul 2.DATA STRUCTURES IN R\par
+\par
+\ulnone 1.Perform Matrix Addition &amp; Subtraction in R\par
+Code:-\par
+\b0 myMatrixA <- matrix(data = 1:9, nrow = 3, ncol = 3) \par
+myMatrixB <- matrix(data = 1:9, nrow = 3, ncol = 3)  \par
+myMatrixCAfterAdding <- myMatrixA + myMatrixB \par
+myMatrixCAfterAdding \par
+myMatrixCAfterSubtraction <- myMatrixA - myMatrixB  \par
+myMatrixCAfterSubtraction\par
+\b output:-\b0\par
+[,1] [,2] [,3]\par
+[1,]    2    8   14\par
+[2,]    4   10   16\par
+[3,]    6   12   18\par
+[,1] [,2] [,3]\par
+[1,]    0    0    0\par
+[2,]    0    0    0\par
+[3,]    0    0    0\par
+\par
+\b 2.Perform Scalar multiplication and matrix multiplication in R\par
+Code:-\par
+\b0 m <- matrix(1:8, nrow=2)\par
+n <- matrix(8:15, nrow=2)\par
+print(m*n)\par
+\b output:-\b0\par
+[,1] [,2] [,3] [,4]\par
+[1,]    8   30   60   98\par
+[2,]   18   44   78  120\par
+\par
+\b 3.Find Transpose of matrix in R.\par
+Code:-\par
+\b0 M <- matrix(1:6, nrow = 2)\par
+print(M)\par
+t <- t(M)\par
+print(t)\par
+\b output:-\par
+\b0 [,1] [,2] [,3]\par
+[1,]    1    3    5\par
+[2,]    2    4    6\par
+[,1] [,2]\par
+[1,]    1    2\par
+[2,]    3    4\par
+[3,]    5    6\par
+\par
+\b 4.Perform the operation of combining matrices in R using cbind() and rbind()\par
+functions.\par
+Code:-\par
+\b0 B = matrix(c(1, 2), nrow = 1, ncol = 2)\par
+C = matrix(c(3, 4, 5), nrow = 1, ncol = 3)\par
+print(B) print(C)\par
+print (cbind(B, C))\par
+\b output:-\par
+\b0 [,1] [,2]\par
+[1,]    1    2\par
+[,1] [,2] [,3]\par
+[1,]    3    4    5\par
+[,1] [,2] [,3] [,4] [,5]\par
+[1,]    1    2    3    4    5\par
+\b 5) Deconstruct a matrix in R\par
+code:-\par
+\b0 A <- matrix(1:4, nrow = 2, ncol = 2)\par
+a1 <- A[1,1]\par
+a2 <- A[1,2]\par
+a3 <- A[2,1]\par
+a4 <- A[2,2]\par
+print(a1)\par
+print(a2)\par
+print(a3)\par
+print(a4)\par
+\b output:-\par
+\b0 [1] 1\par
+[1] 3\par
+[1] 2\par
+[1] 4\par
+\b 6) Perform array manipulation in R \par
+\b0 x <- c(1, 2, 3, 4)\par
+y <- matrix(rep(x, times = 2), ncol = 2, byrow = TRUE)\par
+z <- array(1:24, dim = c(2, 3, 4))\par
+print(x)\par
+print(y)\par
+print(z)\par
+\b OUTPUT:\par
+\b0 [1] 1 2 3 4\par
+     [,1] [,2]\par
+[1,]    1    1\par
+[2,]    2    2\par
+[3,]    3    3\par
+[4,]    4    4\par
+     [,1] [,2] [,3]\par
+[1,]    1    3    5\par
+[2,]    2    4    6\par
+     [,1] [,2] [,3]\par
+[1,]    7    9   11\par
+\par
+\b 7) Perform calculations across array elements in an array using the apply() function.\par
+\b0 x <- matrix(1:6, nrow = 2, ncol = 3)\par
+col_sums <- apply(x, 2, sum)\par
+print(col_sums)\par
+row_means <- apply(x, 1, mean)\par
+print(row_means)\par
+\b OUTPUT:\par
+\b0 [1]  3  5  7\par
+[1] 2.5 3.5\par
+\b 8) Demonstrate Factor data structure in R.\par
+\b0 x <- c("apple", "banana", "cherry", "banana", "apple")\par
+x_factor <- factor(x)\par
+print(x_factor)\par
+\b OUTPUT:\par
+\b0 [1] apple  banana cherry  banana apple \par
+Levels: apple banana cherry\par
+\b 9) Create a data frame and print the structure of the data frame in R.\par
+\b0 df <- data.frame(Name = c("SHASHI", "TAKESH", "SAI"),\par
+                 Age = c(19, 20, 21),\par
+                 Gender = c("Male", "male", "Male"))\par
+str(df)\par
+\b OUTPUT:\par
+\b0 $ Name  : Factor w/ 3 levels "SHASHI","TAKESH","SAI": 3 1 2\par
+ $ Age   : num  19 20 21\par
+ $ Gender: Factor w/ 2 levels "male","Male": 2 1 2\par
+\b 10) Demonstrate the creation of S3 class in R.\par
+\b0 # Define a class\par
+Person <- function(name, age) \{\par
+  structure(list(name = name, age = age), class = "Person")\par
+\}\par
+\par
+# Define a method for the class\par
+print.Person <- function(person) \{\par
+  cat(paste("Name:", person$name, "\\nAge:", person$age, "\\n"))\par
+\}\par
+\par
+# Create an object of the class\par
+p1 <- Person("John", 30)\par
+\par
+# Call the method for the object\par
+print(p1)\par
+\b OUTPUT:\par
+\b0 Name: John \par
+Age: 30\par
+\par
+\b 11) Demonstrate the creation of S4 class in R.\par
+\par
+code;-\par
+\b0 setClass("Person", representation(name = "character", age = "numeric"))\par
+setMethod("print", "Person", function(object) \{\par
+  cat(paste("Name:", object@name, "\\nAge:", object@age, "\\n"))\par
+\})\par
+p1 <- new("Person", name = "John", age = 30)\par
+print(p1)\par
+\b OUTPUT:\par
+\b0 Name: John \par
+Age: 30\par
+\par
+\b 12) Demonstrate the creation of Reference class in R by defining a class called students\par
+with fields \f1\endash  Name, Age , GPA. Also illustrate how the fields of the object can be\par
+accessed using the $ operator. Modify the Name field by reassigning the name to Paul.\par
+library(methods)\par
+\f0 code:-\f1\par
+\b0 students <- setRefClass("students",\par
+  fields = list(\par
+    Name = "character",\par
+    Age = "numeric",\par
+    GPA = "numeric"\par
+  )\par
+)\par
+s1 <- students$new(Name = "John", Age = 25, GPA = 3.5)\par
+cat("Name:", s1$Name, "\\nAge:", s1$Age, "\\nGPA:", s1$GPA, "\\n")\par
+s1$Name <- "Paul"\par
+cat("Name:", s1$Name, "\\nAge:", s1$Age, "\\nGPA:", s1$GPA, "\\n")\par
+\b OUTPUT:\b0\par
+Name: John \par
+Age: 25 \par
+GPA: 3.5 \par
+\par
+Name: Paul \par
+Age: 25 \par
+GPA: 3.5\f0\par
+\par
+\par
+\b\fs28     3.WORKING WITH LOOPING AND FUNCTIONS IN R\par
+\par
+\fs22 1.Write a program to check whether an integer (entered by the user) is a prime number\par
+or not using control statements\b0 .\par
+num <- as.integer(readline(prompt="Enter an integer: "))\par
+flag <- 1\par
+if(num == 2) \{\par
+  flag <- 0\par
+\} else \{\par
+  for(i in 2:(num-1)) \{\par
+    if((num %% i) == 0) \{\par
+      flag <- 0\par
+      break\par
+    \}\par
+  \}\par
+\}\par
+if(flag == 0) \{\par
+  cat("The entered number is not a prime number.")\par
+\} else \{\par
+  cat("The entered number is a prime number.")\par
+\}\par
+\b OUTPUT:\par
+\b0 ENTER AN INTEGER: 7\par
+[1]The entered number is prime number\par
+\par
+\b 2.Write a program to check whether a number entered by the user is positive number\par
+or a negative number or zero.\par
+\b0 num <- as.integer(readline(prompt="Enter a number: "))\par
+if(num > 0) \{\par
+  cat("The entered number is a positive number.")\par
+\} else if(num < 0) \{\par
+  cat("The entered number is a negative number.")\par
+\} else \{\par
+  cat("The entered number is zero.")\par
+\}\par
+\b OUTPUT:\par
+\b0 Enter a number:9\par
+[1] The entered number is a positive number\par
+\b\par
+3.Write a program to check whether a number is an Armstrong number or not using a\par
+while loop.\par
+\b0\par
+#Program to check whether a number is an Armstrong number or not\par
+\par
+#Input the number to be checked\par
+num <- as.integer(readline(prompt="Enter a number: "))\par
+\par
+#Calculate the number of digits\par
+digits <- nchar(as.character(num))\par
+\par
+#Initialize the sum of cubes of digits\par
+sum_cubes <- 0\par
+\par
+#Get each digit of the number and add its cube to the sum\par
+temp_num <- num\par
+while(temp_num > 0) \{\par
+  digit <- temp_num %% 10\par
+  sum_cubes <- sum_cubes + (digit^digits)\par
+  temp_num <- floor(temp_num / 10)\par
+\}\par
+\par
+#Check if the number is an Armstrong number and print the result\par
+if(sum_cubes == num) \{\par
+  cat("The entered number is an Armstrong number.")\par
+\} else \{\par
+  cat("The entered number is not an Armstrong number.")\par
+\}\par
+\b OUTPUT:\par
+\b0 Enter a number:153\par
+[1] entered number is an Armstrong number\par
+\par
+\b 4.Write a program to demonstrate Repeat Loop in R\par
+\b0 count <- 1\par
+repeat\{\par
+  print(count)\par
+  count <- count + 1\par
+  if (count > 5) \{\par
+    break\par
+  \}\par
+\}\par
+\b OUTPUT:\par
+\b0 [1] 1\par
+[1] 2\par
+[1] 3\par
+[1] 4\par
+[1] 5\par
+\par
+\b 5.Using functions develop a simple calculator in R.\par
+\b0 calculate <- function(num1, num2, operator) \{\par
+  if (operator == "+") \{\par
+    return(num1 + num2)\par
+  \} else if (operator == "-") \{\par
+    return(num1 - num2)\par
+  \} else if (operator == "*") \{\par
+    return(num1 * num2)\par
+  \} else if (operator == "/") \{\par
+    return(num1 / num2)\par
+  \} else \{\par
+    return("Invalid operator")\par
+  \}\par
+\}\par
+\par
+result <- calculate(5, 3, "+")\par
+print(result)\par
+\par
+result <- calculate(5, 3, "-")\par
+print(result)\par
+\par
+result <- calculate(5, 3, "*")\par
+print(result)\par
+\par
+result <- calculate(5, 3, "/")\par
+print(result)\par
+\par
+result <- calculate(5, 3, "^")\par
+print(result)\par
+\par
+\b OUTPUT:\par
+\b0 [1] 8\par
+[1] 2\par
+[1] 15\par
+[1] 1.666667\par
+[1] "Invalid operator"\par
+\par
+\b 6. Demonstrate the creation of a complex number in R.\par
+\b0 z1 <- complex(real = 1, imaginary = 2)\par
+print(z1)\par
+z2 <- 3 + 4i\par
+print(z2)\par
+\b OUTPUT:\b0\par
+[1] 1+2i\par
+[1] 3+4i\par
+\par
+\b 7.Write a program to multiply two numbers using a function with a default value.\par
+code:-\b0\par
+Assume default value as NULL.\par
+multiply <- function(x, y = NULL) \{\par
+  if (is.null(y)) \{\par
+    y <- 1\par
+  \}\par
+  return (x * y)\par
+\}\par
+\par
+result <- multiply(5)\par
+print(result)\par
+\par
+result <- multiply(5, 3)\par
+print(result)\par
+\b\par
+OUTPUT:\par
+\b0 [1] 5\par
+[1] 15\par
+\par
+\b 8.Find sum, mean and product of vector elements using built-in functions.\par
+code:-\b0\par
+vec <- c(1, 2, 3, 4, 5)\par
+sum_of_elements <- sum(vec)\par
+print(sum_of_elements)\par
+mean_of_elements <- mean(vec)\par
+print(mean_of_elements)\par
+product_of_elements <- prod(vec)\par
+print(product_of_elements)\par
+\b OUTPUT\b0 :\par
+[1] 15\par
+[1] 3\par
+[1] 120\par
+\par
+\b 9.Sort a vector in R using sort() function. Also find the index of the sorted vector.\par
+code:-\par
+\b0 vec <- c(5, 3, 2, 4, 1)\par
+sorted_vec <- sort(vec)\par
+print(sorted_vec)\par
+index_sorted_vec <- order(vec)\par
+print(index_sorted_vec)\par
+\b OUTPUT:\b0\par
+[1] 1 2 3 4 5\par
+[1] 5 4 3 2 1\par
+\b\par
+10.Find the L.C.M of two numbers entered by the user by creating a user-defined\par
+function.\par
+code:-\par
+\b0 find_lcm <- function(x, y) \{\par
+  return (x * y / gcd(x, y))\par
+\}\par
+x <- as.integer(readline(prompt = "Enter the first number: "))\par
+y <- as.integer(readline(prompt = "Enter the second number: "))\par
+lcm <- find_lcm(x, y)\par
+print(paste("The LCM of", x, "and", y, "is", lcm))\par
+\b OUTPUT:\b0\par
+[1]Enter the first number: 12\par
+[1]Enter the second number:4\par
+[1]The LCM of 12 and 4 is 12\par
+\par
+\b 4.IMPLEMENTATION OF VECTOR RECYCLING,APPLY FAMILY &amp;\par
+RECURSION\par
+\par
+
+\pard\widctlpar\sa160\sl252\slmult1\cf0\f2\fs28\lang16393 Q1. Demonstrate Vector Recycling in R.\par
+\b0\fs24\par
+vec1 <- c(1, 2, 3)\par
+vec2 <- c(4, 5)\par
+sum_of_vectors <- vec1 + vec2\par
+print(sum_of_vectors)\par
+OUTPUT:\par
+[1] 5 7 7\par
+\b\fs28 Q2. Demonstrate the usage of apply function in R\par
+\b0\fs24\par
+mat <- matrix(1:6, ncol = 2)\par
+row_sums <- apply(mat, 1, sum)\par
+print(row_sums)\par
+OUTPUT:\par
+[1]  3  7 11\par
+\b\fs28 Q3. Demonstrate the usage of lapply function in R\par
+\b0\fs24\par
+list_example <- list(c(1, 2, 3), c(4, 5, 6), c(7, 8, 9))\par
+sum_of_squares <- function(x) \{\par
+  sum(x^2)\par
+\}\par
+result <- lapply(list_example, sum_of_squares)\par
+result\par
+OUTPUT:\par
+[[1]]\par
+[1] 14\par
+\par
+[[2]]\par
+[1] 77\par
+\par
+[[3]]\par
+[1] 194\par
+\b\fs28 Q4. Demonstrate the usage of sapply function in r\b0\fs24\line\par
+list_example <- list(c(1, 2, 3), c(4, 5, 6), c(7, 8, 9))\par
+sum_of_squares <- function(x) \{\par
+  sum(x^2)\par
+\}\par
+result <- sapply(list_example, sum_of_squares)\par
+result\par
+OUTPUT:\par
+[1]  14  77 194\par
+\b\fs28 Q5. Demonstrate the usage of tapply function in R\par
+\b0\fs24\par
+values <- c(1, 2, 3, 4, 5, 6, 7, 8, 9)\par
+grouping <- c("A", "B", "A", "B", "A", "B", "A", "B", "A")\par
+result <- tapply(values, grouping, mean)\par
+result\par
+OUTPUT:\par
+  A   B \par
+5.0 6.0\par
+\b\fs28 Q6. Demonstrate the usage of mapply function in R\b0\fs24\par
+a <- c(1, 2, 3)\par
+b <- c(4, 5, 6)\par
+multiply_values <- function(x, y) \{\par
+  x * y\par
+\}\par
+\par
+result <- mapply(multiply_values, a, b)\par
+result\par
+OUTPUT:\par
+[1]  4 10 18\par
+\b\fs28 Q7)Sum of Natural Numbers using Recursion\b0\fs24\par
+sum_of_numbers <- function(n) \{\par
+  if (n == 1) \{\par
+    return(1)\par
+  \} else \{\par
+    return(n + sum_of_numbers(n - 1))\par
+  \}\par
+\}\par
+result <- sum_of_numbers(10)\par
+result\par
+OUTPUT:\par
+[1] 55\par
+\b\fs28 Q8. Write a program to generate Fibonacci sequence using Recursion in R\b0\fs24\par
+\par
+fibonacci <- function(n) \{\par
+  if (n == 1 || n == 2) \{\par
+    return(1)\par
+  \} else \{\par
+    return(fibonacci(n - 1) + fibonacci(n - 2))\par
+  \}\par
+\}\par
+result <- sapply(1:10, fibonacci)\par
+result\par
+OUTPUT:\par
+[1]  1  1  2  3  5  8 13 21 34 55\par
+\b\fs28 Q9. Write a program to find factorial of a number in R using recursion.\b0\fs24\par
+factorial <- function(n) \{\par
+  if (n == 0) \{\par
+    return(1)\par
+  \} else \{\par
+    return(n * factorial(n-1))\par
+  \}\par
+\}\par
+factorial(5)\par
+OUTPUT:\par
+[1] 120\par
+\b\par
+
+\pard\widctlpar\sa200\sl276\slmult1\cf1\f0\fs22\lang1033\par
+\par
+\par
+\b0\par
+
+\pard\sa200\sl276\slmult1\cf0\lang9\par
+}
+ 
